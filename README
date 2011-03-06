@@ -1,0 +1,12 @@
+# LOCAL
+cd ~/workspace3
+rsync -Cravzp soccerhero/public/ soccer-static-assets/
+cd soccer-static-assets/
+git add .
+git commit -m "updating assets"
+git push
+
+#LOG TO bananabrains
+cd soccer-static-assets
+git pull origin master
+
