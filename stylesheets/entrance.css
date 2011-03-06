@@ -1,0 +1,95 @@
+a, a:visited { color:#00ff00;text-decoration:none; }
+
+body{
+  word-wrap:break-word;
+}
+
+#login_box { width:380px; height: 473px;
+  position: absolute;
+  right: 100px;
+  top: 200px;
+  background:url(/images/login_box_back2.png) no-repeat;
+  color: white;
+  line-height:25px;
+  -webkit-box-shadow:rgba(0,0,128,0.5) 9px 9px 9px;
+  border-radius:25px;
+}
+#login_head {margin:25px 0 0 30px;}
+#login_user {margin:40px 0 0 30px;}
+#login_password {margin:20px 0 0 30px;}
+#login_lembrar{margin:20px 0 0 30px;}
+#login_submit{margin:30px 0 0 30px;}
+#login_helper {margin:60px 0 0 30px;}
+
+
+#entrance_logo { position:absolute; right: 222px; top: 50px; }
+
+#entrance_image_back { position:absolute; top: 100px; }
+#entrance_image      { position:absolute; left: 175px; top: 195px; 
+      -webkit-transition: -webkit-transform 2s ease-in-out;
+      }
+#entrance_image_ball_fx { position:absolute; left: 50px; top: 600px; }
+#entrance_image_ball { position:absolute; left: 105px; top: 667px; 
+  /*    -webkit-transition: -webkit-transform 2s ease-in-out;*/
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+      }
+
+#entrance_image:hover {
+  /*-webkit-transform: rotateZ(10deg);*/
+  -webkit-transform: translate3d(110, 110, 90deg);
+}
+#entrance_image_ball:hover {
+  -webkit-transform: rotateZ(9001deg);
+}
+
+/* ----- */
+
+#cadastro_box { width:444px; height: 607px;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  background:url(/images/cadastro_form_back2.png) no-repeat;
+  color: white;
+  line-height:25px;}
+#cadastro_image { position:absolute; right:30px; top:100px; }
+#cadastro_head {margin:25px 0 0 30px;}
+
+#cadastro_username {margin:40px 0 0 30px;}
+#cadastro_sexo {margin:20px 0 0 30px;}
+#cadastro_pais {margin:20px 0 0 30px;}
+#cadastro_estado {margin:20px 0 0 30px;}
+#cadastro_cidade {margin:20px 0 0 30px;}
+#cadastro_email {margin:20px 0 0 30px;}
+
+#cadastro_password {margin:20px 0 0 30px;}
+#cadastro_password_confirmation {margin:20px 0 0 30px;}
+
+#cadastro_cancel {margin:20px 0 0 30px;}
+#cadastro_submit{margin:30px 0 0 30px;}
+#cadastro_helper {margin:60px 0 0 30px;}
+
+
+#cadastro_logo { position:absolute; left: 122px; top: 50px; }
+
+fieldset, img {
+  border-color:transparent;
+  border-width:0;
+}
+
+table {
+  border-collapse:collapse;
+  margin-bottom:20px;
+}
+
+tr.space{
+  height: 10px;
+}
+
+td.hint{
+  color: #BBB;
+  font-size: 90%;
+  vertical-align: bottom; /* for hints http://phrogz.net/css/vertical-align/index.html */
+}
+

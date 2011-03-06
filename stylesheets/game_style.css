@@ -1,0 +1,567 @@
+body{
+  min-width:763px;    /*  |___  Gambiarra pra funfar a      */
+  text-align:center;  /*  |     centralização no IE(ca)     */
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1{
+  font-size: 20px;
+  text-shadow: #773 1px 1px 2px;
+  padding: 3px 0px 10px 0;
+}
+
+#log {
+  background-color: #AA3";
+}
+
+#stage {
+  background-color: #ddddfF;
+  width: 763px;
+  min-height: 555px;
+  padding: 10px 20px;
+  margin: 0 auto; /* width fixa e margin auto centraliza o conteúdo */
+  text-align:left; /* counter-gambiarra pro IE */
+}
+
+#gui {
+  display: none;
+}
+
+#champ_pic {
+  float:left;
+  margin: 0 0 5px 0;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+  #champ_pic_offset{
+    position: absolute;
+    left: -79px;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+  }
+
+#overall_n_team_sy {
+  float: left;
+  margin: 0 0 0 5px;
+  width: 33px;
+}
+.champ_team_sy {
+  border: 1px solid black;
+  float: left;
+  height: 31px;
+  margin: 5px 0 0;
+  width: 31px;
+}
+.champ_overall {
+  border: 1px solid black;
+  float: left;
+  height: 50px;
+  text-align: center;
+  width: 31px;
+}
+.overall_sy {
+  border: 1px solid black;
+  height: 25px;
+  margin: 2px;
+  width: 25px;
+}
+/*#champ_pic img {
+  height: 100px;
+  width: 100px;
+}*/
+
+#status_bars { /* *********  container de todas as barras de status *************** */
+  border:1px solid #555;
+  float:left;
+  margin: 0 0 0 5px;
+  padding:5px 10px;
+}
+#barra_de_energia {}
+#energia_fill {background:#0B0;}
+#energia_sy {margin:0 5px 0 0;}
+#barra_de_stress {margin-top: 15px;}
+#stress_fill {background:#cc4;}
+#stress_sy {}
+#barra_de_fitness {margin-top: 15px;}
+#fitness_fill {}
+#fitness_sy {}
+
+.sy_de_barra {
+  float:left;
+  border:1px solid #444;
+  width: 25px;
+  height: 25px;
+  margin: 10px 5px 0 0px;
+}
+.barra_de_status {
+  float:left;
+  border:1px solid #444;
+  width: 100px;
+  height: 15px;
+  margin-top: 5px;
+}
+.filler_de_barra {
+  float:left;
+  background:#fff;
+  height: 15px;
+}
+
+#nav-shortcuts {
+  border:1px solid #555;
+  float:left;
+  margin: 0 0 0 50px;
+  padding: 0 10px 10px 0;
+}
+#nav-shortcuts a img {
+  border:1px solid #000;
+  width:39px;
+  height:39px;
+  margin: 10px 0 0 10px;
+}
+#nav-shortcuts a img:hover {
+  border:1px solid #f00;
+}
+#logoff {
+  float: right;
+}
+
+#city1_img {
+  float:right;
+  width: 600px;
+  height: 375px;
+  border:none;
+}
+#city1_links {
+  background:#FFFFFF;
+  border: 1px solid #555555;
+  margin: 100px 0 0 0;
+  padding: 0 0 0 15px;
+  position: absolute;
+  width: 200px; 
+}
+
+#placecasa1 {
+}
+#attr_table td img, span{
+  vertical-align:middle;
+  margin: 0 10px 10px 0;
+}
+#champ_profile_img {
+  width: 200px;
+  float: right;
+}
+.treinamento {
+  background:none repeat scroll 0 0 #FFFFFF;
+  border:1px solid #555555;
+  float:left;
+  margin:10px 0 0 10px;
+  padding:5px 10px;
+  width:250px;
+}
+
+.clear {
+  clear:both;
+  
+/* IE shit */
+  position:relative;
+}
+
+.invisible{
+  display:none;
+}
+
+input.error, textarea.error {
+  background-color: #F30;
+}
+
+
+/* ***********************  TEAMS **********************  */
+
+.view > table{
+  text-align: center;
+  border-spacing: 2px;
+}
+
+.view > table > tbody > tr > td{
+  padding: 5px;
+}
+
+.view > table > tbody > tr > th{
+  padding: 0px 10px 10px 0px;
+}
+
+/* ***********************  CHAR CREATION **********************  */
+/* *********************************************  STEP1 **********************************/
+#step1 {
+  padding: 40px 0 60px 250px;
+  position: relative;
+  background:#606060;
+}
+#char_name {
+  /*border: 1px solid black;
+  display: table-cell;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 230px;*/
+}
+#proto_portrait {
+  float: left;
+  position: relative;
+  left: -10px;
+  top: 10px;
+}
+/* hair > nose > eyes > mouth > rest of the body */
+.char_parts_hair {
+  position: absolute;
+  left: 51px;
+  top: 0px;
+  z-index:5;}
+.char_parts_nose {
+  position: absolute;
+  left: 113px;
+  top: 39px;
+  z-index:4;}
+.char_parts_eye {
+  position: absolute;
+  left: 96px;
+  top: 29px;
+  z-index:3;}.char_parts_mouth {
+  position: absolute;
+  left: 106px;
+  top: 47px;
+  z-index:2;}
+.char_shell {
+  background:#f9ddb5;
+  z-index:1;}
+#char_parts_selector {
+  border: 1px solid black;
+  float: left;
+  height: 270px;
+  left: 10px;
+  position: relative;
+  top: 20px;
+  width: 230px;
+  text-align: center;
+  background:white;
+}
+
+#char_parts_eye2 {
+  position: absolute;
+  left: 96px;
+  top: 29px;
+  display: none;
+}
+#char_parts_mouth2 {
+  position: absolute;
+  left: 106px;
+  top: 47px;
+  display: none;
+}
+#step1_next_button {
+  left: 400px;
+  position: relative;
+  top: 15px;
+  width: 90px;
+}
+/* ************************************** END of STEP1 ********************************* */
+
+/* ************************************** STEP2 *************************************** */
+
+#step2 {
+  background: none repeat scroll 0 0 #606060;
+  padding: 40px 10px 65px 15px;
+  position: relative;
+  display: none;
+}
+#step2_portrait {
+  border: 1px solid black;
+  float: left;
+  height: 355px;
+  position: relative;
+  width: 260px;
+} /*
+#step2_portrait img {
+  background: white;
+  height: 300px;
+  margin: 5px 0 0 5px;
+  width: 250px;
+} */
+#step2_chosen_char_name {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid black;
+  bottom: 5px;
+  float: left;
+  height: 40px;
+  left: 15px;
+  position: absolute;
+  width: 230px;
+}
+#step2_char_class_selector {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid black;
+  float: left;
+  height: 80px;
+  left: 80px;
+  padding: 20px 0 0;
+  position: relative;
+  text-align: center;
+  width: 347px;
+}
+#step2_char_class_chooser {
+  border: 1px solid;
+  height: 20px;
+  left: 25%;
+  position: relative;
+  top: 10px;
+  width: 170px;
+}
+
+#step2_attr_table {
+  float: left;
+  left: 39px;
+  position: relative;
+  top: 15px;
+  width: 444px;
+}
+
+/* ************************************** END of STEP2 ********************************* */
+/* Caixa de Atributos do Player */
+.attr_box{
+  background: none repeat scroll 0 0 white;
+  border: 1px solid black;
+  float: left;
+  height: 50px;
+  margin: 0 10px 10px 0;
+  padding: 5px;
+  width: 200px;
+}
+.attr_icon {
+  float: left;
+}
+.attr_explain {
+  padding: 2px 0px 2px 5px;
+  font-weight: bold;
+  float: left;
+}
+.attr_lv{
+  color: #0000FF;
+  font-size: 20px;
+}
+.barra_de_attr {
+  border: 1px solid #444;
+  float: left;
+  height: 8px;
+  width: 50px;
+  margin-top: 2px
+}
+.barra_attr_fill{
+  height: 100%;
+  background: #444444;
+  width: 25%;
+}
+/* /Caixa de Atributos do Player */
+
+/* ***************** PROFILE PAGE ********************* */
+
+#profile_page {
+  background:url("http://db.tt/JWJzKnt");
+  position:relative;
+  height: 350px;
+}           
+#profile_portrait {
+  float:left; 
+}
+#profile_overall {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 2px solid #000000;
+  float: right;
+  font-size: 40px;
+  margin: 30px 40px 0 0;
+  padding: 5px 10px;
+}
+#profile_title {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 2px solid #000000;
+  float: left;
+  font-size: 24px;
+  margin: 30px 0 0 -5px;
+  padding: 5px 10px;
+}
+#profile_team{
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 2px solid #000000;
+  position: absolute;
+  left: 250px;
+  top: 48px;
+  font-size: 18px;
+  margin: 30px 0 0 -5px;
+  padding: 5px 10px;
+}
+#profile_latest_achievs {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 2px solid #000000;
+  float: left;
+  height: 150px;
+  margin: 10px 0 0 -5px;
+  padding: 5px 10px;
+  width: 200px;
+}           
+#profile_score {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 2px solid #000000;
+  float: left;
+  margin: -5px 0 0 40px;
+  padding: 5px 10px;
+}
+#profile_brasao {
+  height: 125px;
+  position: absolute;
+  right: 40px;
+  top: 185px;
+  width: 125px;
+}
+#profile_abas {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #000000;
+  float: left;
+  margin: 25px 0 0;
+  padding: 5px 10px;
+}
+
+.champ_history_box{
+  border: 1px solid black;
+  margin: 10px 1px;
+  padding: 12px 84px;
+  position: relative;
+}
+
+.champ_history_box > div{
+  font-size: 25px;
+}
+
+.champ_hist_date{
+  border: 1px dotted #60F;
+  font-size: 16px !important;
+  left: -1px;
+  position: absolute;
+  top: -1px;
+}
+
+.contract_hist{
+  background: #FF9;
+}
+
+.match_hist{
+  background: #A8FFA8;
+}
+
+/* ***************** END PROFILE PAGE ********************* */
+
+/* ******************************************** BEGIN OF AGENDA ************************************************ */
+#agenda {}
+#agenda_head {
+  background: white;
+  border: 1px solid #000000;
+  font-size: 30px;
+  margin: 0 0 5px;
+  padding: 5px;
+  text-align: center;
+}
+#agenda_calendar {
+  background: white;
+  border: 1px solid #000000;
+  float: left;
+  height: 300px;
+  width: 49%;
+}
+#agenda_events {
+  float: right;
+  width: 49%;
+}
+#agenda_events_head {
+  background: white;
+  border: 1px solid #000000;
+  font-size: 20px;
+  margin: 0 0 5px;
+  padding: 3px;
+  text-align: center;
+}
+.agenda_event {
+  background: white;
+  border: 1px solid #000000;
+  font-size: 12px;
+  margin: 0 0 5px;
+  padding: 5px 5px 10px;
+}
+.agenda_event_icon {
+  float:left;
+  width:30px;
+  height:30px;
+}
+.agenda_event_text {
+  width: 320px;
+  margin: 0 0 0 40px;
+}
+.agenda_event_text *{
+  margin:0;
+  line-height: 14px;
+}
+.good_event {color:#00c;}
+.neutral_event {color:#bb0;}
+.bad_event {color:#C00;}
+
+/* ********************* AGENDA EVENT DIALOG ***************************** */
+#agenda_event_dialog {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #000000;
+  clear: left;
+  padding: 20px;
+  width: 300px;
+}
+#agenda_event_dialog_title {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+}
+#agenda_event_dialog_tip {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #000000;
+  font-size: 12px;
+  min-height: 30px;
+  padding: 10px;
+  margin: 5px auto;
+  width: 80%;
+}
+#agenda_event_dialog_effort {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin: 5px auto;
+  width: 80%;
+}
+  .ui-widget-header{
+    background: #00A47B repeat-x 50% 50% !important;
+  }
+#agenda_event_dialog_ok {
+  height: 50px;
+  margin: 10px 0 0;
+  width: 50px;
+}
+
+/* ********************* AGENDA EVENT DIALOG ***************************** */
+
+/* ******************************************** END OF AGENDA ************************************************ */
