@@ -7,6 +7,8 @@ git commit -m "updating assets"
 git push
 
 #LOG TO bananabrains
+ssh bananabrains@bananabrains.net -senha: maveric.. you know..
+
 cd soccer-static-assets
 git pull origin master
 
