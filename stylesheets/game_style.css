@@ -30,6 +30,31 @@ h1{
 
 #gui {
   display: none;
+  position: fixed;
+  width:inherit;
+  z-index:10;
+
+}
+
+.transp_box {
+  width:100%;
+  height:100%;
+  background:#fff;
+  
+  /* for IE */
+  filter:alpha(opacity=60);
+  /* CSS3 standard */
+  opacity:0.6;
+}
+
+.hud_elem {
+  border: 2px solid black;
+  background:#fff;
+}
+
+.gui_clear_area {
+  height:150px;
+  z-index:-1;
 }
 
 #champ_pic {
@@ -54,15 +79,13 @@ h1{
   margin: 0 0 0 5px;
   width: 33px;
 }
-.champ_team_sy {
-  border: 1px solid black;
+.champ_team_sy {=
   float: left;
   height: 31px;
   margin: 5px 0 0;
   width: 31px;
 }
-.champ_overall {
-  border: 1px solid black;
+.champ_overall {=
   float: left;
   height: 50px;
   text-align: center;
@@ -80,7 +103,6 @@ h1{
 }*/
 
 #status_bars { /* *********  container de todas as barras de status *************** */
-  border:1px solid #555;
   float:left;
   margin: 0 0 0 5px;
   padding:5px 10px;
@@ -116,7 +138,6 @@ h1{
 }
 
 #nav-shortcuts {
-  border:1px solid #555;
   float:left;
   margin: 0 0 0 50px;
   padding: 0 10px 10px 0;
@@ -131,7 +152,8 @@ h1{
   border:1px solid #f00;
 }
 #logoff {
-  float: right;
+  right:0px;
+  position:absolute;
 }
 
 #city1_img {
